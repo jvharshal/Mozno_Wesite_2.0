@@ -1,0 +1,47 @@
+{
+  "name": "mozno-website-2.0",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Mozno Advisory — Empowering Your Financial Journey in India. A static SPA built with React, TypeScript & Tailwind CSS.",
+  "homepage": "https://jvharshal.github.io/Mozno_Wesite_2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "three": "^0.165.0",
+    "@react-three/fiber": "^8.16.8",
+    "@react-three/drei": "^9.107.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.165.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1",
+    "gh-pages": "^6.1.1"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "tailwindcss",
+    "financial-advisory",
+    "spa",
+    "gh-pages"
+  ],
+  "author": "CA Harshal Jain <contact@mozno.in>",
+  "license": "MIT"
+}
