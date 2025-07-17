@@ -1,5 +1,65 @@
-node_modules
-dist
+# ─────────────────────────────────────────
+# BUILD & DEPLOY OUTPUT
+# ─────────────────────────────────────────
+dist/
+build/
+*.local
+
+# ─────────────────────────────────────────
+# DEPENDENCIES
+# ─────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ─────────────────────────────────────────
+# ENVIRONMENT & SECRETS
+# ─────────────────────────────────────────
 .env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# ─────────────────────────────────────────
+# LOGS & DEBUG
+# ─────────────────────────────────────────
+logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─────────────────────────────────────────
+# EDITOR / IDE
+# ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────
+# SYSTEM & SCRATCH
+# ─────────────────────────────────────────
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+.eslintcache
+.vscode-test/
+
+# ─────────────────────────────────────────
+# 3D MODEL DEV CACHE
+# ─────────────────────────────────────────
+*.glb.cache
+*.gltf.cache
+.blend1
+*.blend
+*.blend1
+*.fbm
+*.bin
