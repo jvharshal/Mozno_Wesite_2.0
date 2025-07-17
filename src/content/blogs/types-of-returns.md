@@ -6,7 +6,6 @@
 
 | Author   | CA Harshal Jain |
 |----------|------------------|
-| Date     | 17 July 2025     |
 | Read Time| 8 min            |
 
 ---
