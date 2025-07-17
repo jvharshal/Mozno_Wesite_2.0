@@ -1,6 +1,57 @@
+/* src/index.css */
+
+/* 1. Tailwind directives (always first) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body { overflow-x: hidden; }
-body { font-family: 'Inter', sans-serif; }
+/* 2. Global resets & helpers */
+html, body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #0f172a; /* navy-900 */
+  background-color: #ffffff;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+/* 3. Custom colour palette utilities (optional but keeps things DRY) */
+.bg-navy-900  { background-color: #0f172a !important; }
+.text-navy-900 { color: #0f172a !important; }
+.border-navy-900 { border-color: #0f172a !important; }
+
+.bg-teal-600  { background-color: #0d9488 !important; }
+.text-teal-600 { color: #0d9488 !important; }
+.border-teal-600 { border-color: #0d9488 !important; }
+
+.bg-amber-500 { background-color: #f59e0b !important; }
+.text-amber-500 { color: #f59e0b !important; }
+.border-amber-500 { border-color: #f59e0b !important; }
+
+/* 4. Utility helpers for smooth shadow / hover states */
+.shadow-light {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+.shadow-medium {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* 5. Loader & full-screen overrides (if needed) */
+#root {
+  overflow-x: hidden;
+}
+
+/* 6. Markdown prose styling overrides (optional) */
+.prose a {
+  color: #0d9488;
+  text-decoration: none;
+}
+.prose a:hover {
+  text-decoration: underline;
+}
+
+/* 7. Responsive table scrollbars */
+.prose table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
