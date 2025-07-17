@@ -1,0 +1,8 @@
+[
+  { "title": "Wealth Management", "desc": "Grow your wealth with expert-led investment strategies.", "href": "/services/wealth-management" },
+  { "title": "Financial Planning", "desc": "Build a roadmap to achieve your life’s biggest goals.", "href": "/services/financial-planning" },
+  { "title": "Tax Planning", "desc": "Optimize your finances with strategic tax-saving solutions.", "href": "/services/tax-planning" },
+  { "title": "Insurance Consultancy", "desc": "Protect what matters most with unbiased insurance advice.", "href": "/services/insurance-planning" },
+  { "title": "Borrowing Solutions", "desc": "Access the best loan options through our extensive network.", "href": "/services/borrowing-solutions" },
+  { "title": "Succession Planning", "desc": "Secure your legacy for the next generation.", "href": "/services/succession-planning" }
+]
