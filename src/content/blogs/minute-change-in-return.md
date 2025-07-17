@@ -50,8 +50,6 @@ Sounds like marketing hype? Keep reading.
 | 12 % | ₹8.2 Cr | **₹1.7 Cr** | 3-BHK flat |
 | 13 % | ₹10.4 Cr | **₹3.9 Cr** | 3-BHK + European holiday |
 
-**Visualised**  
-![Retirement Mountain Chart](https://quickchart.io/chart?c={type:'bar',data:{labels:['11%','12%','13%'],datasets:[{label:'Corpus (₹ Cr)',data:[6.5,8.2,10.4],backgroundColor:['#f59e0b','#0d9488','#134e4a']}}})
 
 ---
 
@@ -157,7 +155,3 @@ Assume FD at **8 %**, CPI suddenly **+1 %** to 7 %.
 > **Compounding amplifies even tiny differences.**  
 > **1 % extra CAGR = *crores* over a lifetime.**  
 > Focus on **cost, discipline, time**—the extra 1 % will take care of itself.
-
----
-
-*Embed charts on your site using QuickChart or Chart.js for richer UX.*
