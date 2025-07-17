@@ -31,7 +31,7 @@ const TermsConditionsPage: React.FC = () => {
             2. Service Description
           </h2>
           <p>
-            Mozno Advisory provides financial education, mutual-fund distribution and goal-planning resources. We are an <strong>AMFI-registered Mutual Fund Distributor</strong> (ARN-XXXXXX). We do not provide investment advisory services as defined under SEBI (IA) Regulations, 2013.
+            Mozno Advisory provides financial education, mutual-fund distribution and goal-planning resources. We are an <strong>AMFI-registered Mutual Fund Distributor</strong>. We do not provide investment advisory services as defined under SEBI (IA) Regulations, 2013.
           </p>
 
           {/* 3. User Obligations */}
