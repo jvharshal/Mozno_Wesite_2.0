@@ -115,11 +115,3 @@ Everything else is a **nominal illusion**.
 - **Outcome**: Option B buys **₹50 k more jewellery** in today’s money.
 
 ---
-
-## 9️⃣ Visual Cheat-Sheets
-
-### 9.1 Real Return Calculator Snippet
-```js
-// Paste in browser console
-const realReturn = (nominal, inflation) => ((1+nominal)/(1+inflation)-1)*100;
-realReturn(0.08, 0.06); // returns 1.89 %
