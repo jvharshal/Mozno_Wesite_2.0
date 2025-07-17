@@ -1,8 +1,85 @@
+// src/data/services.json
 [
-  { "title": "Wealth Management", "desc": "Grow your wealth with expert-led investment strategies.", "href": "/services/wealth-management" },
-  { "title": "Financial Planning", "desc": "Build a roadmap to achieve your life’s biggest goals.", "href": "/services/financial-planning" },
-  { "title": "Tax Planning", "desc": "Optimize your finances with strategic tax-saving solutions.", "href": "/services/tax-planning" },
-  { "title": "Insurance Consultancy", "desc": "Protect what matters most with unbiased insurance advice.", "href": "/services/insurance-planning" },
-  { "title": "Borrowing Solutions", "desc": "Access the best loan options through our extensive network.", "href": "/services/borrowing-solutions" },
-  { "title": "Succession Planning", "desc": "Secure your legacy for the next generation.", "href": "/services/succession-planning" }
+  {
+    "id": "wealth-management",
+    "name": "Wealth Management",
+    "short": "Grow your wealth with expert-led investment strategies.",
+    "icon": "💰",
+    "path": "/services/wealth-management",
+    "intro": "Grow your capital with intelligent investment strategies. As a nationwide distributor of Mutual Funds, PMS and AIFs we leverage deep market research and a stringent compliance framework to align the right products with your goals.",
+    "details": {
+      "products": [
+        { "name": "Mutual Funds", "benefits": ["Diversified", "Liquidity", "Regulated by SEBI"] },
+        { "name": "PMS", "benefits": ["Personalised", "HNI-oriented", "Direct equity"] },
+        { "name": "AIFs", "benefits": ["Alternative assets", "High conviction", "Tax-efficient"] }
+      ],
+      "regulatory": ["AMFI-registered", "SEBI compliant", "Transparent reporting"],
+      "partnerLogos": ["AMFI.png", "SEBI.png", "MF-Utilities.png"]
+    }
+  },
+  {
+    "id": "financial-planning",
+    "name": "Financial Planning",
+    "short": "Build a roadmap to achieve your life's biggest goals.",
+    "icon": "🗺️",
+    "path": "/services/financial-planning",
+    "intro": "Achieve your dreams with a clear, actionable plan. We create a comprehensive financial roadmap covering life goals, risk assessment and strategic asset allocation.",
+    "details": {
+      "process": ["Discovery", "Risk Profiling", "Goal Setting", "Plan Execution", "Annual Review"],
+      "tools": ["Goal Calculator", "Cash-Flow Map", "Monte-Carlo Simulator"],
+      "examples": ["Retirement @ 60", "World Tour @ 45", "Child Education @ 18"]
+    }
+  },
+  {
+    "id": "tax-planning",
+    "name": "Tax Planning",
+    "short": "Optimise taxes while staying fully compliant.",
+    "icon": "📊",
+    "path": "/services/tax-planning",
+    "intro": "Maximise your savings by minimising tax liability. We offer proactive Direct and Indirect Tax planning to ensure you remain compliant while taking every legal deduction.",
+    "details": {
+      "direct": ["ITR Filing", "Section 80C, 80D, 24B", "Capital Gains Harvesting"],
+      "indirect": ["GST Advisory", "Input-Credit Optimisation"],
+      "deadlines": ["31 Jul – ITR", "15 Sep – Advance Tax", "31 Mar – Investment Proof"]
+    }
+  },
+  {
+    "id": "insurance-consultancy",
+    "name": "Insurance Consultancy",
+    "short": "Unbiased protection for what matters most.",
+    "icon": "🛡️",
+    "path": "/services/insurance-consultancy",
+    "intro": "Protect your future with unbiased advice. Unlike agents tied to a single company we analyse needs and source best policies from vetted specialists.",
+    "details": {
+      "types": ["Term Life", "Health", "Critical Illness", "Personal Accident"],
+      "process": ["Need Analysis", "Comparison Matrix", "Claim Support"],
+      "advantage": ["No commission bias", "Multi-insurer quotes", "Annual review"]
+    }
+  },
+  {
+    "id": "borrowing-solutions",
+    "name": "Borrowing Solutions",
+    "short": "Secure funding on the best possible terms.",
+    "icon": "🏦",
+    "path": "/services/borrowing-solutions",
+    "intro": "Secure the funding you need on the best possible terms. Leverage our network of 25+ banks & NBFCs to find competitive rates and favourable conditions.",
+    "details": {
+      "loans": ["Home Loan", "Business Loan", "Personal Loan", "Education Loan"],
+      "features": ["Door-step service", "Pre-approved offers", "Balance-transfer savings"],
+      "partnerLogos": ["SBI.png", "HDFC.png", "ICICI.png", "Axis.png"]
+    }
+  },
+  {
+    "id": "succession-planning",
+    "name": "Succession Planning",
+    "short": "Secure your legacy for the next generation.",
+    "icon": "📜",
+    "path": "/services/succession-planning",
+    "intro": "Preserve your legacy and protect loved ones. Ensure assets transfer smoothly according to your wishes preventing legal disputes.",
+    "details": {
+      "tools": ["Will Drafting", "Trust Creation", "Nomination Updates", "Gift Deeds"],
+      "benefits": ["Avoid probate", "Minimise tax", "Family harmony", "Special-needs trusts"],
+      "stats": ["70 % Indians without Will", "Average legal cost ₹1-3 L saved"]
+    }
+  }
 ]
