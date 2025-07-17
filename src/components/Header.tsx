@@ -1,99 +1,78 @@
-// src/components/Header.tsx
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
-const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+export default function Footer() {
+  const services = [
+    { name: 'Wealth Management', href: '/services/wealth-management' },
+    { name: 'Financial Planning', href: '/services/financial-planning' },
+    { name: 'Tax Planning', href: '/services/tax-planning' },
+    { name: 'Insurance Planning', href: '/services/insurance-planning' },
+    { name: 'Borrowing Solutions', href: '/services/borrowing-solutions' },
+    { name: 'Succession Planning', href: '/services/succession-planning' },
+  ];
+
+  const quick = [
+    { name: 'About Us', href: '/about' },
+    { name: 'Educate', href: '/educate' },
+    { name: 'Contact', href: '/contact' },
+  ];
+
+  const legal = [
+    { name: 'Disclaimer', href: '/disclaimer' },
+    { name: 'Privacy Policy', href: '/privacy-policy' },
+    { name: 'Terms & Conditions', href: '/terms-conditions' },
+  ];
 
   return (
-    <header className="bg-white shadow-lg fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-3">
-              <img
-                src="/dist/Mozno Logo Horizontal.png"
-                alt="Mozno Advisory Logo"
-                className="h-12 w-auto object-contain"
-              />
-              <div className="text-xl font-bold text-gray-900">
-                MOZNO ADVISORY
-              </div>
-              <div className="text-sm text-teal-600">
-                One-stop house for all your financial needs
-              </div>
-            </Link>
+    <footer className="bg-navy-900 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <img src="/dist/Mozno Advisory Logo New.png" alt="Logo" className="h-12 mb-4" />
+            <p className="text-sm text-gray-300 leading-relaxed">
+              Founded by CA Harshal Jain, Mozno Advisory simplifies your financial journey with expert guidance.
+            </p>
           </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Home
-            </Link>
-            <Link to="/about" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              About
-            </Link>
-            <Link to="/services" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Services
-            </Link>
-            <Link to="/financial-education" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Educate
-            </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Contact
-            </Link>
-            <a
-              href="#/contact"
-              className="bg-teal-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-teal-700 transition-colors"
-            >
-              Book Free Consultation
-            </a>
-          </nav>
-
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-green-600"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+          <div>
+            <h3 className="font-semibold mb-3">Services</h3>
+            {services.map((s) => (
+              <Link key={s.name} to={s.href} className="block text-sm text-gray-300 hover:text-teal-400 mb-1">{s.name}</Link>
+            ))}
+          </div>
+          <div>
+            <h3 className="font-semibold mb-3">Quick Links</h3>
+            {quick.map((q) => (
+              <Link key={q.name} to={q.href} className="block text-sm text-gray-300 hover:text-teal-400 mb-1">{q.name}</Link>
+            ))}
+          </div>
+          <div>
+            <h3 className="font-semibold mb-3">Contact</h3>
+            <div className="flex items-start space-x-2 mb-2">
+              <MapPin className="w-4 h-4 mt-1 text-teal-400" />
+              <span className="text-sm text-gray-300">
+                Office No.106, Shyamkamal 'C' Building, Agarwal Market, Vile Parle (E), Mumbai - 400 057
+              </span>
+            </div>
+            <div className="flex items-center space-x-2 mb-2">
+              <Phone className="w-4 h-4 text-teal-400" />
+              <a href="tel:+919820507696" className="text-sm text-gray-300 hover:text-teal-400">+91 98205 07696</a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Mail className="w-4 h-4 text-teal-400" />
+              <a href="mailto:contact@mozno.in" className="text-sm text-gray-300 hover:text-teal-400">contact@mozno.in</a>
+            </div>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200 py-4">
-            <div className="flex flex-col space-y-4">
-              <Link to="/" className="text-gray-700 hover:text-green-600 font-medium">
-                Home
-              </Link>
-              <Link to="/about" className="text-gray-700 hover:text-green-600 font-medium">
-                About
-              </Link>
-              <Link to="/services" className="text-gray-700 hover:text-green-600 font-medium">
-                Services
-              </Link>
-              <Link to="/financial-education" className="text-gray-700 hover:text-green-600 font-medium">
-                Educate
-              </Link>
-              <Link to="/contact" className="text-gray-700 hover:text-green-600 font-medium">
-                Contact
-              </Link>
-              <a
-                href="#/contact"
-                className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-center"
-              >
-                Book Free Consultation
-              </a>
-            </div>
+        <div className="border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row justify-between text-sm text-gray-400">
+          <p>© {new Date().getFullYear()} Mozno Advisory. All rights reserved.</p>
+          <div className="flex space-x-4 mt-2 md:mt-0">
+            {legal.map((l) => (
+              <Link key={l.name} to={l.href} className="hover:text-teal-400">{l.name}</Link>
+            ))}
           </div>
-        )}
+        </div>
       </div>
-    </header>
+    </footer>
   );
-};
-
-export default Header;
+}
