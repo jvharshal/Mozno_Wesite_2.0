@@ -45,4 +45,9 @@
   "author": "CA Harshal Jain <contact@mozno.in>",
   "license": "MIT"
 }
-"homepage": "https://jvharshal.github.io/Mozno_Wesite_2.0"
+"homepage": "https://jvharshal.github.io/Mozno_Wesite_2.0",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
