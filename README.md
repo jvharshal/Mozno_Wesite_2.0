@@ -8,7 +8,6 @@
 
 ---
 
-## 📦 Quick Start
 
 ```bash
 # 1. Clone the repo
